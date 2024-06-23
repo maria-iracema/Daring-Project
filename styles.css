@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Frock;
+    src: url('Frock-Blackltalic.otf') format(opentype);
+}
+
+.superiopart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar-box{
+     width: 65px;
+     height: 65px;
+     background-color: white;
+     overflow: hidden;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     transition: .5s;
+}
+
+.buscar-box.ativar{
+    width: 400px;
+
+}
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.buscar-box .btn-fechar{
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+.buscar-box .lupa-buscar i{
+    font-size: 25px;
+}
+
+.buscar-box .input-buscar{
+   position: absolute;
+   left: 65px;
+   width: calc(100% - 120px);
+   height: 100%;
+   line-height: 65px; 
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+
+.logo{
+    width: 65%;
+}
+h1 {
+    font-family: Frock;
+    text-align: center;
+    font-size: 65px;
+    margin: 0em auto;
+}
+
+
+.start{
+    width:auto;
+    height: 45px;
+    background-color: #A1080D;
+    margin:-10px;
+}
+
+.centered {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+
+nav{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#A1080D;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#home{
+    border: 10px;
+    padding: 25px;
+}
+
+#tshirts{
+    border: 10px;
+    padding: 25px;
+}
+
+#special{
+    border: 10px;
+    padding: 25px;
+}
+
+#packs{
+    border: 10px;
+    padding: 25px;
+}
+
+#intro{
+    text-align: justify;
+}
+
+#cabe{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+}
+
+#conteiner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+}
+
+#firstleft{
+    width: 32vw;
+}
+
+#meio{
+    width: 32vw;
+}
+
+#ultimo{
+    width: 32vw;
+}
