@@ -8,6 +8,14 @@
     src: url('Frock-Blackltalic.otf') format(opentype);
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
 .superiopart{
     display: flex;
     justify-content: center;
@@ -15,14 +23,16 @@
 }
 
 .buscar-box{
-     width: 65px;
-     height: 65px;
-     background-color: white;
-     overflow: hidden;
-     display: flex;
-     justify-content: space-between;
-     position: relative;
-     transition: .5s;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transition: .5s;
+    top: 65px;
+    right: 65px;
 }
 
 .buscar-box.ativar{
@@ -63,14 +73,16 @@
 
 .logo{
     width: 65%;
+    flex-shrink: 0;
 }
+
 h1 {
     font-family: Frock;
     text-align: center;
     font-size: 65px;
     margin: 0em auto;
+    color:black;
 }
-
 
 .start{
     width:auto;
@@ -103,8 +115,16 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
-    color:#A1080D;
+    font-size: 25px;
+    position: sticky;
 }
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav a:hover, h1 a:hover {
+    color: #A1080D;
+  }
 
 footer{
     display: flex;
@@ -169,4 +189,24 @@ h4{
 
 #ultimo{
     width: 32vw;
+}
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.whatsapp-link:hover {
+    background-color: #1E865F;
+}
+  
+.bi-whatsapp {
+    font-size: 24px;
+    color: #FFFFFF;
 }
